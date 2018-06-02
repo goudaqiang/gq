@@ -25,6 +25,7 @@ def main():
 	print "dir_path = " + dir_path
 	get_py_path(dir_path)
 #	print list_word
+	list_word.sort()	#排序
 	print "word number = %s" % len(list_word)
 	
 	file_out = dir_path_exe + "/complete-dict"
