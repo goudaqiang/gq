@@ -74,7 +74,7 @@ def main(_):
 
     with tf.name_scope('loss'):
         cross_entropy = tf.losses.sparse_softmax_cross_entropy(labels=y_, logits=y_conv)
-    cross_entropy = tf.reduce_mean(cross_entropy)
+#    cross_entropy = tf.reduce_mean(cross_entropy)	#官方文档这一句有点多余，cross_entropy是一个值，没必要求均值。
 
     with tf.name_scope('adam_optimizer'):
         train_step = tf.train.AdamOptimizer(1e-4).minimize(cross_entropy)
