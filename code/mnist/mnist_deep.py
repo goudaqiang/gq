@@ -1,7 +1,7 @@
 #!/usr/bin/python
 #coding: utf-8
 #
-#功能：
+#功能：多层感知机
 #作者：gouqiang
 #时间：2018/6/4
 #用法：
